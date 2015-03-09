@@ -86,7 +86,7 @@ public class Products {
                     maxId = checkIdResults.getInt(1);
                 } 
                 
-                postResponse = Response.ok("http://localhost:8080/Assignment-3/products/" + String.valueOf(maxId) ).build();
+                postResponse = Response.ok("http://localhost:8080/JavaAssignment4/products/" + String.valueOf(maxId) ).build();
         } catch (SQLException ex) {
             Logger.getLogger(Products.class.getName())
                     .log(Level.SEVERE, null, ex);
@@ -118,7 +118,7 @@ public class Products {
             
             pstmt.executeUpdate();
             
-            putResponse = Response.ok("http://localhost:8080/Assignment-3/products/" + id ).build();
+            putResponse = Response.ok("http://localhost:8080/JavaAssignment4/products/" + id ).build();
         } catch (SQLException ex) {
             Logger.getLogger(Products.class.getName())
                     .log(Level.SEVERE, null, ex);
